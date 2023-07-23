@@ -14,10 +14,10 @@ const Navbar = () => {
     return (
         <div className="navbar bg-yellow-100 bg-opacity-50">
             <div className="navbar-start">
-                <Link to='/'>
+                <Link to='/' className='ml-0 lg:ml-10'>
                     <div className='flex items-center gap-2'>
                         <img src={logo} alt="" className='h-10 w-16' />
-                        <h1 className='font-bold text-2xl'>Education<span>-Hub</span></h1>
+                        <h1 className='font-bold text-2xl text-yellow-500 uppercase'>Education-<span className='text-black'>Hub</span></h1>
                     </div>
                 </Link>
             </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
                             {navItems}
                         </ul>
                     </div>
-                <button className='btn mr-0 lg:mr-10'>SignUp</button>
+                <Link to='/register'><button className='btn mr-0 lg:mr-10'>SignUp</button></Link>
             </div>
         </div>
     );
